@@ -1,4 +1,4 @@
-# vCard - Personal portfolio
+# vCard - Personal portfolio {Access Here(https://venkatseshu.netlify.app/)}
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/codewithsadee/vcard-personal-portfolio)
 ![GitHub stars](https://img.shields.io/github/stars/codewithsadee/vcard-personal-portfolio?style=social)
@@ -7,11 +7,6 @@
 [![YouTube Video Views](https://img.shields.io/youtube/views/SoxmIlgf2zM?style=social)](https://youtu.be/SoxmIlgf2zM)
 
 vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
-
-## Demo
-
-## ![vCard Desktop Demo](./website-demo-image/desktop.png "Desktop Demo")
-## ![vCard Mobile Demo](./website-demo-image/mobile.png "Mobile Demo")
 
 ## Prerequisites
 
