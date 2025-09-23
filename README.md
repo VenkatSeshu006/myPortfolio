@@ -14,25 +14,25 @@ Before you begin, ensure you have met the following requirements:
 
 * [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system.
 
-## Installing vCard
+## Installing myPortfolio
 
-To install **vCard**, follow these steps:
+To install **myPortfolio**, follow these steps:
 
 Linux and macOS:
 
 ```bash
-sudo git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
+sudo git clone [https://github.com/codewithsadee/vcard-personal-portfolio.git](https://github.com/VenkatSeshu006/myPortfolio)
 ```
 
 Windows:
 
 ```bash
-git clone https://github.com/codewithsadee/vcard-personal-portfolio.git
+git clone [https://github.com/codewithsadee/vcard-personal-portfolio.git](https://github.com/VenkatSeshu006/myPortfolio)
 ```
 
 ## Contact
 
-If you want to contact me you can reach me at [Twitter](https://www.x.com/codewithsadee_).
+If you want to contact me you can reach me [@Twitter](https://x.com/venkatseshu006).
 
 ## License
 
