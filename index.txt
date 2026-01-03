@@ -1,24 +1,24 @@
-vCard - Personal Portfolio
+Personal Portfolio
 
 # sidebar
 
-alt = Richard hanrick
-Richard hanrick
-Web developer
+alt = Venkat Seshu
+Venkat Seshu
+Jr developer
 
 Show Contacts
 
 Email
-richard@example.com
+venkatseshu006@gmail.com
 
 Phone
-+1 (213) 352-2795
++91 7893743341
 
 Birthday
-June 23, 1982
+July 29, 2002
 
 Location
-Sacramento, California, USA
+Hyderabad, Telangana, India
 
 # navbar
 
