@@ -195,6 +195,10 @@
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
 
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>To Do</button>
+          </li>
+
         </ul>
 
       </nav>
@@ -1234,6 +1238,53 @@
             </button>
 
           </form>
+
+        </section>
+
+      </article>
+
+
+
+      <!--
+        - #TO DO
+      -->
+
+      <article class="todo" data-page="to do">
+
+        <header>
+          <h2 class="h2 article-title">To Do List</h2>
+        </header>
+
+        <section class="todo-app">
+
+          <div class="todo-input-area">
+            <input
+              type="text"
+              id="todo-input"
+              class="todo-text-input"
+              placeholder="Add a new task…"
+              maxlength="200"
+            >
+            <button id="todo-add-btn" class="todo-add-btn">
+              <ion-icon name="add-outline"></ion-icon>
+              <span>Add</span>
+            </button>
+          </div>
+
+          <div class="todo-filters">
+            <button class="todo-filter-btn active" data-todo-filter="all">All</button>
+            <button class="todo-filter-btn" data-todo-filter="active">Active</button>
+            <button class="todo-filter-btn" data-todo-filter="completed">Completed</button>
+          </div>
+
+          <ul class="todo-list" id="todo-list">
+            <!-- tasks injected by JS -->
+          </ul>
+
+          <div class="todo-footer">
+            <span class="todo-count" id="todo-count">0 tasks left</span>
+            <button class="todo-clear-btn" id="todo-clear-btn">Clear Completed</button>
+          </div>
 
         </section>
 
