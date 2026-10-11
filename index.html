@@ -467,9 +467,10 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">MLR Institute of Technology</h4>
-
-              <span>B.Tech in Computer Science & Engineering (Cybersecurity Specialization) (2021 – 2025)</span>
+              <div class="timeline-item-heading">
+                <h4 class="h4 timeline-item-title">MLR Institute of Technology</h4>
+                <span>B.Tech in CSE(Cybersecurity Specialization) (2021 – 2025)</span>
+              </div>
 
               <p class="timeline-text">
                 Completed my graduate degree with a focus on Cybersecurity, DevOps, and Web Development. Worked
@@ -481,9 +482,10 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Narayana Jr. College</h4>
-
-              <span>Intermediate (MPC) — (2019 – 2021)</span>
+              <div class="timeline-item-heading">
+                <h4 class="h4 timeline-item-title">Narayana Jr. College</h4>
+                <span>Intermediate (MPC) — (2019 – 2021)</span>
+              </div>
 
               <p class="timeline-text">
                 Specialized in Mathematics, Physics, and Chemistry. Built a strong foundation in analytical and problem-solving 
@@ -494,9 +496,10 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Ravindra Bharathi School</h4>
-
-              <span>Secondary Education — Completed in 2019</span>
+              <div class="timeline-item-heading">
+                <h4 class="h4 timeline-item-title">Ravindra Bharathi School</h4>
+                <span>Secondary Education — Completed in 2019</span>
+              </div>
 
               <p class="timeline-text">
                 Completed my schooling with distinction, actively participating in academic competitions and extracurricular 
@@ -523,9 +526,10 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">PAT — Cognizant</h4>
-
-              <span>January 2026 – Present</span>
+              <div class="timeline-item-heading">
+                <h4 class="h4 timeline-item-title">Programmer Analyst Trainee — Cognizant</h4>
+                <span>January 2026 – Present</span>
+              </div>
 
               <p class="timeline-text">
                 Working on a Generative AI project involving AI agents and chatbots. Building and deploying AI-driven
@@ -537,9 +541,10 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">President — EWB-IUCEE MLRIT Student Chapter</h4>
-
-              <span>July 2024 – Mar 2025</span>
+              <div class="timeline-item-heading">
+                <h4 class="h4 timeline-item-title">President — EWB-IUCEE MLRIT Student Chapter</h4>
+                <span>July 2024 – Mar 2025</span>
+              </div>
 
               <p class="timeline-text">
                 Led the student chapter, organized flagship events like EloqVent 2k24 in collaboration with EWB India, IUCEE, IEEE, and SPEED. 
@@ -550,9 +555,10 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Amalyte</h4>
-
-              <span>Associate Developer Intern | Ended June 2025</span>
+              <div class="timeline-item-heading">
+                <h4 class="h4 timeline-item-title">Amalyte LLP</h4>
+                <span>Associate Developer Intern | Ended June 2025</span>
+              </div>
 
               <p class="timeline-text">
                 Assisted the development team in designing, coding, and debugging software applications. Gained hands-on experience in an agile 
@@ -563,9 +569,10 @@
 
             <li class="timeline-item">
 
-              <h4 class="h4 timeline-item-title">Freelance Web Projects</h4>
-
-              <span>2023 - Present</span>
+              <div class="timeline-item-heading">
+                <h4 class="h4 timeline-item-title">Freelance Web Projects</h4>
+                <span>2023 - Present</span>
+              </div>
 
               <p class="timeline-text">
                 Designed and developed websites for startups and small businesses using WordPress, Elementor, and Shopify. Delivered customized 
@@ -1320,9 +1327,11 @@
             <input type="hidden" name="bot-field">
 
             <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="text" name="name" class="form-input" placeholder="Full name" required data-form-input>
 
               <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+
+              <input type="tel" name="phone" class="form-input" placeholder="Phone number" required data-form-input autocomplete="tel">
             </div>
 
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
@@ -1331,6 +1340,8 @@
               <ion-icon name="paper-plane"></ion-icon>
               <span>Send Message</span>
             </button>
+
+            <p class="form-status" data-form-status aria-live="polite"></p>
 
           </form>
 

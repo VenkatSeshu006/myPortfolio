@@ -80,6 +80,7 @@ for (let i = 0; i < filterBtn.length; i++) {
 const form = document.querySelector("[data-form]");
 const formInputs = document.querySelectorAll("[data-form-input]");
 const formBtn = document.querySelector("[data-form-btn]");
+const formStatus = document.querySelector("[data-form-status]");
 
 // add event to all form input field
 for (let i = 0; i < formInputs.length; i++) {
@@ -95,6 +96,36 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
+form.addEventListener("submit", async function (event) {
+  if (!window.location.protocol.startsWith("http")) return;
+
+  event.preventDefault();
+  formBtn.setAttribute("disabled", "");
+  formStatus.className = "form-status";
+  formStatus.textContent = "Sending your message...";
+
+  try {
+    const response = await fetch(form.getAttribute("action") || window.location.pathname, {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(new FormData(form)).toString()
+    });
+
+    if (!response.ok) {
+      throw new Error(`Form submission failed with status ${response.status}`);
+    }
+
+    form.reset();
+    formBtn.setAttribute("disabled", "");
+    formStatus.className = "form-status is-success";
+    formStatus.textContent = "Thanks for reaching out. Your message has been sent successfully.";
+  } catch (error) {
+    formStatus.className = "form-status is-error";
+    formStatus.textContent = "We could not send your message. Please try again or contact me directly.";
+    if (form.checkValidity()) formBtn.removeAttribute("disabled");
+    console.error("Netlify form submission failed:", error);
+  }
+});
 
 
 // page navigation variables
